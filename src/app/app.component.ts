@@ -64,7 +64,7 @@ export class AppComponent {
         titre: "Projet UHA4.0 [Logitud]",
         titreBis: "DBGeoAddresses",
         content: "Developper un referentiel d'adresses \n" +
-          "quiseramulti-source et dont on\n" +
+          "qui seramulti-source et dont on\n" +
           "connait la validite des donnees",
         contentBis: "NDLZKzdddz",
         date: "11/2018 1/2018",
@@ -74,7 +74,7 @@ export class AppComponent {
        id : "2",
        titre: "Projet UHA 4.0 [Université de Grenoble]",
        titreBis: "EdCampus",
-       content: "Ameliorer et debugger un LDAP pour l'université de Grenoble ",
+       content: "Améliorer et débugger un LDAP pour l'université de Grenoble ",
        contentBis: "d",
        date: "1/2019 3/2019",
        logo: ['assets/AngularJS.png','assets/Bootstrap.png', ]
@@ -84,7 +84,7 @@ export class AppComponent {
        titre: "Stage [Artcane]",
        titreBis: "Artcane",
        content: "Developper un site internet vitrine/blog\n" +
-         "Ameliorer et gerer du SEO ",
+         "Améliorer et gérer du SEO ",
        contentBis: "e",
        date: "3/2019 8/2019",
        logo: ['assets/PHP-logo.png','assets/JavaScript.png','assets/Bootstrap.png','assets/mysql.png' ]
@@ -93,8 +93,8 @@ export class AppComponent {
        id : "4",
        titre: "Projet UHA 4.0[Master Histoire]",
        titreBis: "Alsace Expos",
-       content: "Creer une application mobile sur mesure\n" +
-         "pour des etudiants en histoire afin de leur expliquer les bases du SQL",
+       content: "Créer une application mobile sur mesure\n" +
+         "pour des étudiants en histoire afin de leur expliquer les bases du SQL",
        contentBis: "ezhr",
        date: "10/2019 11/2019 ",
        logo: ['assets/angular.png','assets/JavaScript.png','assets/Bootstrap.png','assets/mysql.png' ]
@@ -104,7 +104,7 @@ export class AppComponent {
        id : "5",
        titre: "Projet UHA4.0 [UHA4.0]",
        titreBis: "Badgeuse",
-       content: "Creer et ameliorer une application badgeuse\n" +
+       content: "Créer et améliorer une application badgeuse\n" +
          "numerique web pour les étudiants",
        contentBis: "ezhr",
        date: "11/2019 1/2020 ",
@@ -169,7 +169,7 @@ export class AppComponent {
          "Devloppement d'un serious Game",
        contentBis: "ezhr",
        date: "6/2020 8/2022",
-       logo: ['assets/angular.png','assets/nestjs.png','assets/Unity.png',,'assets/WordPress.png']
+       logo: ['assets/angular.png','assets/nestjs.png','assets/Unity.png','assets/WordPress.png']
      }
     ]
 

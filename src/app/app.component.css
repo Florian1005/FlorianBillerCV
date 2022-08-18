@@ -359,14 +359,17 @@ flex-basis: 0;
 .ProjetBox{
   font-size: 28px;
   text-align: center;
-  color: #eeeeee;
+  color: #ffffff;
+  background-color: rgba(0, 146, 202, 0.3);
   margin-top: 2%;box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
   height: 15vh;
   margin-right: 2%;
   margin-left: 2%;
   border-radius:10px;
   transition:  border 0.5s ease;
+
 }
+
 
 .ProjetBox:hover{
   border: 1px solid #0092ca;
@@ -448,7 +451,6 @@ padding-top: 12px;
 
   height: 5vh;
   padding-top: 12px;
-  padding-left: 12px;
 }
 .textPic{
   font-size: 28px;
@@ -464,15 +466,33 @@ padding-top: 12px;
   margin: 0 auto;
 }
 
-.indice{
+.indiceGreen{
   border-radius: 50%;
   background-color: rgba(114,255,20,0.7);
   width: 10px ;
   height: 10px;
   position: relative;
+  text-align: center;
 }
 
 
+.indiceOrange{
+  border-radius: 50%;
+  background-color: rgb(246, 111, 52);
+  width: 10px ;
+  height: 10px;
+  position: relative;
+  text-align: center;
+}
+
+.indiceRed{
+  border-radius: 50%;
+  background-color: rgb(255, 0, 39);
+  width: 10px ;
+  height: 10px;
+  position: relative;
+  text-align: center;
+}
 /*--------------------------------------------------------------------------------------------*/
 
 

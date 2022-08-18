@@ -1,9 +1,7 @@
 <nav class="navCustome " [ngClass]="scrollValue ? 'affix' : ''">
   <div class="containercustome">
     <div class="logo">
-      <!--  <a class="" routerLinkActive="active" routerLink="">
-         GOELAN
-        </a>-->
+
     </div>
     <div id="mainListDiv" class="main_list"  >
       <ul class="">
@@ -37,6 +35,7 @@
 <div >
     <h1>Florian Biller</h1>
     <h2>Développeur informatique</h2>
+  <h2><a href="./assets/FlorianBiller2020.pdf" download>Mon CV</a></h2>
   </div>
   </div>
   <!--Waves Container-->
@@ -159,8 +158,8 @@
 <div class="gauche">
   <div class="ratioboutonL" (click)="afterPage()"><p class="arrowL"><svg width="24" height="24" xmlns="http://www.w3.org/2000/svg" fill-rule="evenodd" clip-rule="evenodd"><path d="M20 .755l-14.374 11.245 14.374 11.219-.619.781-15.381-12 15.391-12 .609.755z"/></svg></p></div>
   <div class="ratioboutonR" (click)="netxPage()"><p class="arrowR"><svg width="24" height="24" xmlns="http://www.w3.org/2000/svg" fill-rule="evenodd" clip-rule="evenodd"><path d="M4 .755l14.374 11.245-14.374 11.219.619.781 15.381-12-15.391-12-.609.755z"/></svg></p></div>
-  <div class="ProjetBox" (click)="selectBox(list.id- 1 )" *ngFor="let list of ProjectList.slice(page - 1  , page + 2 ); index as i ">{{list.titre}}
-    </div>
+  <div class="ProjetBox" (click)="selectBox(list.id- 1 )" *ngFor="let list of ProjectList.slice(page - 1  , page + 2 ); index as i "> {{list.titre}}
+     </div>
 
 </div>
 <div class="droite"><h2 class="TitreDuText">{{ProjectList[num].titreBis}}</h2>
@@ -169,38 +168,41 @@
 
 
 </div>
-
-
+<div   style="display: flex;padding-left: 45%;padding-right: 5%;; background-color: rgba(57, 62, 70,1);">
+<div class="indiceGreen" ></div><p style="color: white">+500h</p>
+<div class="indiceOrange" ></div><p style="color: white">+100h</p>
+<div class="indiceRed" ></div><p style="color: white">100h-50h</p>
+</div>
 <div class="box">
 
 
   <div class="hobby" style="display: flex">
     <div class="col">
-    <div class="indice" ></div><img class="logoTechno" src="assets/HTML.png"><br>
-      <div class="indice"></div>  <img   class="logoTechno" src="assets/CSS3.svg"><br>
-      <div class="indice"></div> <img   class="logoTechno" src="assets/angular.png"><br>
-      <div class="indice"></div>  <img class="logoTechno" src="assets/AngularJS.png"><br>
-      <div class="indice"></div> <img   class="logoTechno" src="assets/Docker.png"><br>
+    <div class="indiceGreen" ></div><img class="logoTechno" src="assets/HTML.png"><br>
+      <div class="indiceGreen"></div>  <img   class="logoTechno" src="assets/CSS3.svg"><br>
+      <div class="indiceGreen"></div> <img   class="logoTechno" src="assets/angular.png"><br>
+      <div class="indiceRed"></div>  <img class="logoTechno" src="assets/AngularJS.png"><br>
+      <div class="indiceGreen"></div> <img   class="logoTechno" src="assets/Docker.png"><br>
     </div>
     <div class="col">
-      <div class="indice"></div> <img   class="logoTechno" src="assets/Bootstrap.png"><br>
-      <div class="indice"></div>  <img   class="logoTechno" src="assets/Git.png"><br>
-      <div class="indice"></div>  <img   class="logoTechno" src="assets/Java.png"><br>
-      <div class="indice"></div> <img   class="logoTechno" src="assets/JavaScript.png"><br>
-      <div class="indice"></div> <img   class="logoTechno" src="assets/Jenkins.png"><br>
-      <div class="indice"></div>  <img   class="logoTechno" src="assets/mongo.png"><br>
+      <div class="indiceGreen"></div> <img   class="logoTechno" src="assets/Bootstrap.png"><br>
+      <div class="indiceGreen"></div>  <img   class="logoTechno" src="assets/Git.png"><br>
+      <div class="indiceGreen"></div>  <img   class="logoTechno" src="assets/Java.png"><br>
+      <div class="indiceGreen"></div> <img   class="logoTechno" src="assets/JavaScript.png"><br>
+      <div class="indiceOrange"></div> <img   class="logoTechno" src="assets/Jenkins.png"><br>
+      <div class="indiceRed"></div>  <img   class="logoTechno" src="assets/mongo.png"><br>
     </div>
     <div class="col">
-      <div class="indice"></div> <img   class="logoTechno" src="assets/mysql.png"><br>
-      <div class="indice"></div>  <img   class="logoTechno" src="assets/node.png"><br>
-      <div class="indice"></div> <img   class="logoTechno" src="assets/PHP-logo.png"><br>
-      <div class="indice"></div>  <img   class="logoTechno" src="assets/python.png"><br>
-      <div class="indice"></div>  <img   class="logoTechno" src="assets/React.png"><br>
-      <div class="indice"></div> <img   class="logoTechno" src="assets/Typescript.png"><br>
+      <div class="indiceGreen"></div> <img   class="logoTechno" src="assets/mysql.png"><br>
+      <div class="indiceGreen"></div>  <img   class="logoTechno" src="assets/node.png"><br>
+      <div class="indiceOrange"></div> <img   class="logoTechno" src="assets/PHP-logo.png"><br>
+      <div class="indiceRed"></div>  <img   class="logoTechno" src="assets/python.png"><br>
+      <div class="indiceGreen"></div>  <img   class="logoTechno" src="assets/React.png"><br>
+      <div class="indiceGreen"></div> <img   class="logoTechno" src="assets/Typescript.png"><br>
     </div>
     <div class="col">
-      <div class="indice"></div> <img   class="logoTechno" src="assets/Unity.png"><br>
-      <div class="indice"></div> <img   class="logoTechno" src="assets/WordPress.png"><br>
+      <div class="indiceOrange"></div> <img   class="logoTechno" src="assets/Unity.png"><br>
+      <div class="indiceOrange"></div> <img   class="logoTechno" src="assets/WordPress.png"><br>
     </div>
     </div>
 </div>
@@ -216,7 +218,7 @@
 
 
 </div>
-
+<!--
 <div class="box">
 
   <div class="hobby">
@@ -224,17 +226,19 @@
 
     <p style="font-size: 26px ; color: #f6f6f6 ; margin-left: 4%">Me contacter</p>
 
-    <!-- Name -->
-      <div style="float: left;">
-    <input type="text " formControlName="contactFormName" id="defaultContactFormName"
-           class="form-control   lebelFormulaire" placeholder="Nom de la société / Nom">
 
-    <!-- Email -->
+
+      <div style="float: left;">
+
+
+   <input type="text " formControlName="contactFormName" id="defaultContactFormName"
+                class="form-control   lebelFormulaire" placeholder="Nom de la société / Nom">
+
+
     <input type="email" formControlName="contactFormEmail" id="defaultContactFormEmail"
            class="form-control lebelFormulaire" placeholder="E-mail">
 
 
-    <!-- Message -->
     <div class="form-group">
     <textarea formControlName="contactFormMessage" class="form-control rounded-0 lebelFormulaire" style="width: 680px;height: 200px ; max-width: 780px ; max-height: 260px ; min-height: 200px ; min-width: 680px "  id="exampleFormControlTextarea2"
               rows="3" placeholder="Message"></textarea>
@@ -242,7 +246,6 @@
   </div>
       <div  style="float: left; width: 680px; ">
 
-    <!-- Send button -->
     <button mdbBtn color="info" outline="true" block="true" class="z-depth-0 my-4 waves-effect lebelFormulaire"
             mdbWavesEffect type="submit">Envoyer !</button>
 
@@ -252,5 +255,6 @@
 
 
 </div>
-<!--Header ends-->
+
+      -->
 
