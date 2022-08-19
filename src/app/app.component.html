@@ -218,11 +218,11 @@
 
 
 </div>
-<!--
+
 <div class="box">
 
   <div class="hobby">
-    <form class="text-center border border-light p-5 ">
+    <form class="contact-form" (submit)="sendEmail($event)" class="text-center border border-light p-5 ">
 
     <p style="font-size: 26px ; color: #f6f6f6 ; margin-left: 4%">Me contacter</p>
 
@@ -231,23 +231,23 @@
       <div style="float: left;">
 
 
-   <input type="text " formControlName="contactFormName" id="defaultContactFormName"
+   <input  name="user_name" type="text " formControlName="contactFormName" id="defaultContactFormName"
                 class="form-control   lebelFormulaire" placeholder="Nom de la société / Nom">
 
 
-    <input type="email" formControlName="contactFormEmail" id="defaultContactFormEmail"
+    <input name="user_email" type="email" formControlName="contactFormEmail" id="defaultContactFormEmail"
            class="form-control lebelFormulaire" placeholder="E-mail">
 
 
     <div class="form-group">
-    <textarea formControlName="contactFormMessage" class="form-control rounded-0 lebelFormulaire" style="width: 680px;height: 200px ; max-width: 780px ; max-height: 260px ; min-height: 200px ; min-width: 680px "  id="exampleFormControlTextarea2"
+    <textarea name="message" formControlName="contactFormMessage" class="form-control rounded-0 lebelFormulaire" style="width: 680px;height: 200px ; max-width: 780px ; max-height: 260px ; min-height: 200px ; min-width: 680px "  id="exampleFormControlTextarea2"
               rows="3" placeholder="Message"></textarea>
     </div>
   </div>
       <div  style="float: left; width: 680px; ">
 
     <button mdbBtn color="info" outline="true" block="true" class="z-depth-0 my-4 waves-effect lebelFormulaire"
-            mdbWavesEffect type="submit">Envoyer !</button>
+            mdbWavesEffect value="Send" type="submit">Envoyer !</button>
 
       </div>
   </form>
@@ -255,6 +255,4 @@
 
 
 </div>
-
-      -->
 

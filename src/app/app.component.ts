@@ -1,5 +1,7 @@
 import {Component} from '@angular/core';
 import { animate, style, transition, trigger } from "@angular/animations";
+import emailjs, { EmailJSResponseStatus } from '@emailjs/browser';
+
 
 @Component({
   selector: 'app-root',
@@ -41,6 +43,9 @@ import { animate, style, transition, trigger } from "@angular/animations";
   ]
 })
 export class AppComponent {
+
+ // constructor(private _snackBar: MatSnackBar) {}
+
 
   title = 'FlorianBillerCV';
   display: boolean | undefined;
@@ -256,14 +261,10 @@ export class AppComponent {
 
   netxPage(){
 
-    if (this.page >= this.ProjectList.length ){
-      this.page = this.ProjectList.length
+    if (this.page  >= this.ProjectList.length -3){
     }
     else {
-
-
       this.page = this.page + 3
-      console.log("oefiznzefhioo ouodu")
     }
   }
 
@@ -281,8 +282,26 @@ export class AppComponent {
     window.scrollTo(0, num);
   }
 
-
+/*
+  openSnackBar(text: string) {
+    this._snackBar.open(text, 'Splash', {
+      horizontalPosition: 'center',
+      verticalPosition: 'top',
+    });
+  }
+*/
   getRandNum(){
     return {left :Math.floor(Math.random() * 100)+ 'px', top :Math.floor(Math.random() * 400)+ 'px'} ;
+  }
+
+
+  sendEmail(e: Event) {
+    e.preventDefault();
+    emailjs.sendForm('service_r5w2bho', 'template_cyv4q0x', e.target as HTMLFormElement, 'bVQg_h-p2Wnp1edIO')
+      .then((result: EmailJSResponseStatus) => {
+      //  this.openSnackBar("Votre message a bien été envoyé")
+      }, (error) => {
+      //  this.openSnackBar("Une erreur est survenue")
+      });
   }
 }
