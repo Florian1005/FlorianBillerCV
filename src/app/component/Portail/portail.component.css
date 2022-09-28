@@ -1,0 +1,32 @@
+
+.card{
+  height: 55vh ;
+  width: 20vw;
+  box-shadow: 0.8rem 0.8rem 1.4rem  #c8d0e7 , -0.2rem -0.2rem 1.8rem  #FFFFFF ;
+}
+.cardInter{
+  height: 30vh ;
+  width: 18vw;
+ background-color: rgba(0, 130, 180, 0.71);
+ margin: 5%;
+  border-radius:10px;
+}
+.box{
+  position:absolute;
+  top:0px;
+  right:0px;
+  bottom:0px;
+  left:0px;
+}
+.gauche{
+  color: white;
+  margin-left: 10%;
+  margin-right: 10%;
+  float: left;
+  border-radius:10px;
+}
+.droite{
+  margin-right: 10%;
+  float: right;
+  border-radius:10px;
+}

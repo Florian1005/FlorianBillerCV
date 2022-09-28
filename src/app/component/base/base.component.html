@@ -1,0 +1,529 @@
+<nav class="navCustome " [ngClass]="scrollValue ? 'affix' : ''">
+  <div class="containercustome">
+    <div class="logo">
+
+    </div>
+    <div id="mainListDiv" class="main_list">
+      <ul class="">
+        <li><a routerLinkActive="active" routerLink="" href="#contact" (click)="scrollEl(0)">Accueil</a></li>
+        <li><a routerLinkActive="active" routerLink="orientation" (click)="scrollEl(1100)">Parcours</a></li>
+        <li><a routerLinkActive="active" routerLink="presentation" (click)="scrollEl(3200)">Projet</a></li>
+        <li><a routerLinkActive="active" routerLink="favoris" (click)="scrollEl(4200)">Compétence</a>
+        <li><a routerLinkActive="active" routerLink="favoris" (click)="scrollEl(5200)">Hobby</a>
+        </li>
+        <li><a routerLinkActive="active" routerLink="favoris" (click)="scrollEl(6200)">Contact</a>
+        </li>
+      </ul>
+    </div>
+    <span class="navTrigger">
+                <i></i>
+                <i></i>
+                <i></i>
+            </span>
+  </div>
+</nav>
+
+
+<div class="header">
+  <div id="cursor"></div>
+  <div id="cursorTrail"></div>
+  <div id="cursorTraill"></div>
+  <!--Content before waves-->
+  <div class="inner-header flex">
+    <!--Just the logo.. Don't mind this-->
+    <div>
+      <h1>Florian Biller</h1>
+      <h2>Développeur informatique</h2>
+      <h2><a href="./assets/FlorianBiller2020.pdf" download>Mon CV</a></h2>
+    </div>
+  </div>
+  <!--Waves Container-->
+  <div>
+    <svg class="waves" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+         viewBox="0 24 150 28" preserveAspectRatio="none" shape-rendering="auto">
+      <defs>
+        <path id="gentle-wave" d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z"/>
+      </defs>
+      <g class="parallax">
+        <use xlink:href="#gentle-wave" x="48" y="0" fill="rgba(57, 62, 70,0.7"/>
+        <use xlink:href="#gentle-wave" x="48" y="3" fill="rgba(57, 62, 70,0.5)"/>
+        <use xlink:href="#gentle-wave" x="48" y="5" fill="rgba(57, 62, 70,0.3)"/>
+        <use xlink:href="#gentle-wave" x="48" y="7" fill="rgba(57, 62, 70,1)"/>
+      </g>
+    </svg>
+  </div>
+  <!--Waves end-->
+
+</div>
+
+
+<div style="height:2500px;background-color:rgba(57, 62, 70,1);font-size:36px">
+
+  <section>
+    <div *ngIf="scrollValue>=1100 && scrollValue<=3100"
+         style="position: fixed;top: 8%;z-index: 9999999 ; font-size: 26px ; color: #f6f6f6 ; margin-left: 4%">Parcours
+    </div>
+    <div *ngIf="scrollValue>=3100 && scrollValue<=4000"
+         style="position: fixed;top: 8%;z-index: 9999999 ; font-size: 26px ; color: #f6f6f6 ; margin-left: 4%">Projet
+    </div>
+    <div *ngIf="scrollValue>=4000  && scrollValue<=5100"
+         style="position: fixed;top: 8%;z-index: 9999999 ; font-size: 26px ; color: #f6f6f6 ; margin-left: 4%">
+      Compétences
+    </div>
+    <div *ngIf="scrollValue>=5100  && scrollValue<=6100"
+         style="position: fixed;top: 8%;z-index: 9999999 ; font-size: 26px ; color: #f6f6f6 ; margin-left: 4%">Hobby
+    </div>
+    <div *ngIf="scrollValue>=6100"
+         style="position: fixed;top: 8%;z-index: 9999999 ; font-size: 26px ; color: #f6f6f6 ; margin-left: 4%">Contact
+    </div>
+
+    <div class="inner-header flex">
+      <div class="veritcalTimeLine" @inOutPaneAnimationL *ngIf="scrollValue>=800">
+        <div class="BlockDiplome" @inOutPaneAnimationL *ngIf="scrollValue>=1000">
+          <div class="Diplome">
+            <img src="assets/diplome.svg" alt="Picture"
+                 class="DiplomeImg">
+          </div>
+          <div class="dateL">
+            Juillet 2018 / Septembre 2018
+          </div>
+          <div class="DiplomeContentL">
+            Obtention du Bac S <br>
+            Debut de la licence professionelle UHA4.0
+          </div>
+        </div>
+
+        <div class="BlockDiplome" @inOutPaneAnimationR *ngIf="scrollValue>=1200">
+          <div class="Diplome">
+            <img src="assets/codingB.svg" alt="Picture"
+                 class="DiplomeImg">
+          </div>
+          <div class="dateR">
+            Mars 2019 - Septembre 2019
+          </div>
+          <div class="DiplomeContentR">
+            Stage chez ArtCane
+          </div>
+        </div>
+        <div class="BlockDiplome" @inOutPaneAnimationL *ngIf="scrollValue>=1400">
+          <div class="Diplome">
+            <img src="assets/codingB.svg" alt="Picture"
+                 class="DiplomeImg">
+          </div>
+
+          <div class="dateL">
+            Mars 2020 - Septembre 2020
+          </div>
+          <div class="DiplomeContentL">
+            Stage chez Actimage
+          </div>
+        </div>
+        <div class="BlockDiplome" @inOutPaneAnimationR *ngIf="scrollValue>=1600">
+          <div class="Diplome">
+            <img src="assets/codingB.svg" alt="Picture"
+                 class="DiplomeImg">
+          </div>
+          <div class="dateR">
+            Mars 2021 - Juillet 2021
+          </div>
+          <div class="DiplomeContentR">
+            Stage à l'Université de Haute Alsace
+          </div>
+        </div>
+        <div class="BlockDiplome" @inOutPaneAnimationL *ngIf="scrollValue>=1800">
+          <div class="Diplome">
+            <img src="assets/diplome.svg" alt="Picture"
+                 class="DiplomeImg">
+          </div>
+
+          <div class="dateL">
+            Septembre 2021
+          </div>
+          <div class="DiplomeContentL">
+            Obtiention Licence Développeur informatique
+          </div>
+        </div>
+        <div class="BlockDiplome" @inOutPaneAnimationR *ngIf="scrollValue>=2000">
+          <div class="Diplome">
+            <img src="assets/codingB.svg" alt="Picture"
+                 class="DiplomeImg">
+          </div>
+          <div class="dateR">
+            Juillet 2021 - Septembre 2022
+          </div>
+          <div class="DiplomeContentR" (mouseover)="CDbug()">Développeur Web à l'Université de Haute Alsace
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+  </section>
+
+
+</div>
+
+<div class="box">
+
+  <div class="gauche">
+    <div class="ratioboutonL" (click)="afterPage()">
+      <p class="arrowL">
+        <svg width="24" height="24" xmlns="http://www.w3.org/2000/svg" fill-rule="evenodd" clip-rule="evenodd">
+          <path d="M20 .755l-14.374 11.245 14.374 11.219-.619.781-15.381-12 15.391-12 .609.755z"/>
+        </svg>
+      </p>
+    </div>
+    <div class="ratioboutonR" (click)="netxPage()">
+      <p class="arrowR">
+        <svg width="24" height="24" xmlns="http://www.w3.org/2000/svg" fill-rule="evenodd" clip-rule="evenodd">
+          <path d="M4 .755l14.374 11.245-14.374 11.219.619.781 15.381-12-15.391-12-.609.755z"/>
+        </svg>
+      </p>
+    </div>
+    <div class="ProjetBox" (click)="selectBox(list.id- 1 )"
+         *ngFor="let list of ProjectList.slice(page - 1  , page + 2 ); index as i "> {{list.titre}}
+    </div>
+
+  </div>
+  <div class="droite"><h2 class="TitreDuText">{{ProjectList[num].titreBis}}</h2>
+    <p class="Pgrph">{{ProjectList[num].content}}</p>
+    <div class="buttomDiv"><img *ngFor="let logo of ProjectList[num].logo" class="logoTechno" src="{{logo}}"></div>
+  </div>
+
+
+</div>
+
+<div class="box">
+
+
+  <div class="hobby" style="display: flex">
+    <div class="col">
+
+      <div>
+        <div><img class="logoTechno col" src="assets/HTML.png"></div>
+        <div style="margin-left: 25%"><img class="Starlogo" src="assets/StarFull.svg"><img
+          class="Starlogo" src="assets/StarFull.svg"><img class="Starlogo" src="assets/StarFull.svg"><img
+          class="Starlogo"
+          src="assets/StarFull.svg"><img
+          class="Starlogo" src="assets/StarFull.svg"></div>
+      </div>
+
+      <div>
+        <div><img class="logoTechno" src="assets/CSS3.svg"></div>
+        <div style="margin-left: 25%"><img class="Starlogo" src="assets/StarFull.svg"><img
+          class="Starlogo" src="assets/StarFull.svg"><img class="Starlogo" src="assets/StarFull.svg"><img
+          class="Starlogo"
+          src="assets/StarFull.svg"><img
+          class="Starlogo" src="assets/StarFull.svg"></div>
+      </div>
+
+      <div>
+        <div><img class="logoTechno" src="assets/angular.png"></div>
+        <div style="margin-left: 25%"><img class="Starlogo" src="assets/StarFull.svg"><img
+          class="Starlogo" src="assets/StarFull.svg"><img class="Starlogo" src="assets/StarFull.svg"><img
+          class="Starlogo"
+          src="assets/StarFull.svg"><img
+          class="Starlogo" src="assets/StarFull.svg"></div>
+      </div>
+
+      <div>
+        <div><img class="logoTechno" src="assets/Bootstrap.png"></div>
+        <div style="margin-left: 25%"><img class="Starlogo" src="assets/StarFull.svg"><img
+          class="Starlogo" src="assets/StarFull.svg"><img class="Starlogo" src="assets/StarFull.svg"><img
+          class="Starlogo"
+          src="assets/StarFull.svg"><img
+          class="Starlogo" src="assets/StarFull.svg"></div>
+      </div>
+
+      <div>
+        <div><img class="logoTechno" src="assets/React.png"></div>
+        <div style="margin-left: 25%"><img class="Starlogo" src="assets/StarFull.svg"><img
+          class="Starlogo" src="assets/StarFull.svg"><img class="Starlogo" src="assets/StarFull.svg"><img
+          class="Starlogo"
+          src="assets/StarFull.svg"><img
+          class="Starlogo" src="assets/StarFull.svg"></div>
+      </div>
+
+    </div>
+
+    <div class="col">
+
+      <div>
+        <div><img class="logoTechno" src="assets/Git.png"></div>
+        <div style="margin-left: 25%"><img class="Starlogo" src="assets/StarFull.svg"><img
+          class="Starlogo" src="assets/StarFull.svg"><img class="Starlogo" src="assets/StarFull.svg"><img
+          class="Starlogo"
+          src="assets/StarFull.svg"><img
+          class="Starlogo" src="assets/StarFull.svg"></div>
+      </div>
+
+      <div>
+        <div><img class="logoTechno" src="assets/Typescript.png"></div>
+        <div style="margin-left: 25%"><img class="Starlogo" src="assets/StarFull.svg"><img
+          class="Starlogo" src="assets/StarFull.svg"><img class="Starlogo" src="assets/StarFull.svg"><img
+          class="Starlogo"
+          src="assets/StarFull.svg"><img
+          class="Starlogo" src="assets/StarFull.svg"></div>
+      </div>
+
+      <div>
+        <div><img class="logoTechno" src="assets/JavaScript.png"></div>
+        <div style="margin-left: 25%"><img class="Starlogo" src="assets/StarFull.svg"><img
+          class="Starlogo" src="assets/StarFull.svg"><img class="Starlogo" src="assets/StarFull.svg"><img
+          class="Starlogo"
+          src="assets/StarFull.svg"><img
+          class="Starlogo" src="assets/StarFull.svg"></div>
+      </div>
+      <div>
+        <div><img class="logoTechno" src="assets/mysql.png"></div>
+        <div style="margin-left: 25%"><img class="Starlogo" src="assets/StarFull.svg"><img
+          class="Starlogo" src="assets/StarFull.svg"><img class="Starlogo" src="assets/StarFull.svg"><img
+          class="Starlogo"
+          src="assets/StarFull.svg"><img
+          class="Starlogo" src="assets/StarFull.svg"></div>
+      </div>
+      <div>
+        <div><img class="logoTechno" src="assets/node.png"></div>
+        <div style="margin-left: 25%"><img class="Starlogo" src="assets/StarFull.svg"><img
+          class="Starlogo" src="assets/StarFull.svg"><img class="Starlogo" src="assets/StarFull.svg"><img
+          class="Starlogo"
+          src="assets/StarFull.svg"><img
+          class="Starlogo" src="assets/StarFull.svg"></div>
+      </div>
+
+
+    </div>
+    <div class="col">
+      <div>
+        <div><img class="logoTechno" src="assets/nestjs.png"></div>
+        <div style="margin-left: 25%"><img class="Starlogo" src="assets/StarFull.svg"><img
+          class="Starlogo" src="assets/StarFull.svg"><img class="Starlogo" src="assets/StarFull.svg"><img
+          class="Starlogo"
+          src="assets/StarFull.svg"><img
+          class="Starlogo" src="assets/StarFull.svg"></div>
+      </div>
+
+
+      <div>
+        <div><img class="logoTechno" src="assets/Java.png"></div>
+        <div style="margin-left: 25%"><img class="Starlogo" src="assets/StarFull.svg"><img
+          class="Starlogo" src="assets/StarFull.svg"><img class="Starlogo" src="assets/StarFull.svg"><img
+          class="Starlogo"
+          src="assets/StarFull.svg"><img
+          class="Starlogo" src="assets/StarEmpty.svg"></div>
+      </div>
+
+      <div>
+        <div><img class="logoTechno" src="assets/Docker.png"></div>
+        <div style="margin-left: 25%"><img class="Starlogo" src="assets/StarFull.svg"><img
+          class="Starlogo" src="assets/StarFull.svg"><img class="Starlogo" src="assets/StarFull.svg"><img
+          class="Starlogo"
+          src="assets/StarEmpty.svg"><img
+          class="Starlogo" src="assets/StarEmpty.svg"></div>
+      </div>
+
+
+      <div>
+        <div><img class="logoTechno" src="assets/Jenkins.png"></div>
+        <div style="margin-left: 25%"><img class="Starlogo" src="assets/StarFull.svg"><img
+          class="Starlogo" src="assets/StarFull.svg"><img class="Starlogo" src="assets/StarFull.svg"><img
+          class="Starlogo"
+          src="assets/StarEmpty.svg"><img
+          class="Starlogo" src="assets/StarEmpty.svg"></div>
+      </div>
+
+      <div>
+        <div><img class="logoTechno" src="assets/WordPress.png"></div>
+        <div style="margin-left: 25%"><img class="Starlogo" src="assets/StarFull.svg"><img
+          class="Starlogo" src="assets/StarFull.svg"><img class="Starlogo" src="assets/StarFull.svg"><img
+          class="Starlogo"
+          src="assets/StarEmpty.svg"><img
+          class="Starlogo" src="assets/StarEmpty.svg"></div>
+      </div>
+    </div>
+
+    <div class="col">
+      <div>
+        <div><img class="logoTechno" src="assets/Unity.png"></div>
+        <div style="margin-left: 25%"><img class="Starlogo" src="assets/StarFull.svg"><img
+          class="Starlogo" src="assets/StarFull.svg"><img class="Starlogo" src="assets/StarFull.svg"><img
+          class="Starlogo"
+          src="assets/StarEmpty.svg"><img
+          class="Starlogo" src="assets/StarEmpty.svg"></div>
+      </div>
+
+      <div>
+        <div><img class="logoTechno" src="assets/PHP-logo.png"></div>
+        <div style="margin-left: 25%"><img class="Starlogo" src="assets/StarFull.svg"><img
+          class="Starlogo" src="assets/StarFull.svg"><img class="Starlogo" src="assets/StarFull.svg"><img
+          class="Starlogo"
+          src="assets/StarEmpty.svg"><img
+          class="Starlogo" src="assets/StarEmpty.svg"></div>
+      </div>
+
+      <div>
+        <div><img class="logoTechno" src="assets/AngularJS.png"></div>
+        <div style="margin-left: 25%"><img class="Starlogo" src="assets/StarFull.svg"><img
+          class="Starlogo" src="assets/StarFull.svg"><img class="Starlogo" src="assets/StarFull.svg"><img
+          class="Starlogo"
+          src="assets/StarEmpty.svg"><img
+          class="Starlogo" src="assets/StarEmpty.svg"></div>
+      </div>
+      <div>
+        <div><img class="logoTechno" src="assets/mongo.png"></div>
+        <div style="margin-left: 25%"><img class="Starlogo" src="assets/StarFull.svg"><img
+          class="Starlogo" src="assets/StarFull.svg"><img class="Starlogo" src="assets/StarEmpty.svg"><img
+          class="Starlogo"
+          src="assets/StarEmpty.svg"><img
+          class="Starlogo" src="assets/StarEmpty.svg"></div>
+      </div>
+
+
+      <div>
+        <div><img class="logoTechno" src="assets/python.png"></div>
+        <div style="margin-left: 25%"><img class="Starlogo" src="assets/StarFull.svg"><img
+          class="Starlogo" src="assets/StarFull.svg"><img class="Starlogo" src="assets/StarEmpty.svg"><img
+          class="Starlogo"
+          src="assets/StarEmpty.svg"><img
+          class="Starlogo" src="assets/StarEmpty.svg"></div>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+<div class="box">
+  <div class="skill" style="display: flex">
+    <div>
+      <div class="col"><p class="textComp ">SCRUM</p></div>
+      <div >
+        <img class="Starlogo" src="assets/StarFull.svg"><img
+        class="Starlogo" src="assets/StarFull.svg"><img class="Starlogo" src="assets/StarFull.svg"><img
+        class="Starlogo"
+        src="assets/StarFull.svg"><img
+        class="Starlogo" src="assets/StarFull.svg">
+      </div>
+    </div>
+    <div class="col">
+      <div><p class="textComp">Agile</p></div>
+      <div style="margin-left: 25%"><img class="Starlogo" src="assets/StarFull.svg"><img
+        class="Starlogo" src="assets/StarFull.svg"><img class="Starlogo" src="assets/StarFull.svg"><img
+        class="Starlogo"
+        src="assets/StarFull.svg"><img
+        class="Starlogo" src="assets/StarFull.svg"></div>
+    </div>
+
+    <div class="col">
+      <div><p class="textComp">Objet</p></div>
+      <div style="margin-left: 25%"><img class="Starlogo" src="assets/StarFull.svg"><img
+        class="Starlogo" src="assets/StarFull.svg"><img class="Starlogo" src="assets/StarFull.svg"><img
+        class="Starlogo"
+        src="assets/StarFull.svg"><img
+        class="Starlogo" src="assets/StarEmpty.svg"></div>
+    </div>
+    <div class="col">
+      <div><p class="textComp">Debug</p></div>
+      <div style="margin-left: 25%"><img class="Starlogo" src="assets/StarFull.svg"><img
+        class="Starlogo" src="assets/StarFull.svg"><img class="Starlogo" src="assets/StarEmpty.svg"><img
+        class="Starlogo"
+        src="assets/StarEmpty.svg"><img
+        class="Starlogo" src="assets/StarEmpty.svg"></div>
+    </div>
+    <div class="col">
+      <div><p class="textComp">CI/CD</p></div>
+      <div style="margin-left: 25%"><img class="Starlogo" src="assets/StarFull.svg"><img
+        class="Starlogo" src="assets/StarFull.svg"><img class="Starlogo" src="assets/StarFull.svg"><img
+        class="Starlogo"
+        src="assets/StarEmpty.svg"><img
+        class="Starlogo" src="assets/StarEmpty.svg"></div>
+    </div>
+    <div class="col">
+      <div><p class="textComp">UML</p></div>
+      <div style="margin-left: 25%"><img class="Starlogo" src="assets/StarFull.svg"><img
+        class="Starlogo" src="assets/StarFull.svg"><img class="Starlogo" src="assets/StarFull.svg"><img
+        class="Starlogo"
+        src="assets/StarEmpty.svg"><img
+        class="Starlogo" src="assets/StarEmpty.svg"></div>
+    </div>
+    <div class="col">
+      <div><p class="textComp">Test</p></div>
+      <div style="margin-left: 25%"><img class="Starlogo" src="assets/StarFull.svg"><img
+        class="Starlogo" src="assets/StarFull.svg"><img class="Starlogo" src="assets/StarEmpty.svg"><img
+        class="Starlogo"
+        src="assets/StarEmpty.svg"><img
+        class="Starlogo" src="assets/StarEmpty.svg"></div>
+    </div>
+    <div class="col">
+      <div><p class="textComp">Desing Patten singleton</p></div>
+      <div style="margin-left: 25%"><img class="Starlogo" src="assets/StarFull.svg"><img
+        class="Starlogo" src="assets/StarFull.svg"><img class="Starlogo" src="assets/StarFull.svg"><img
+        class="Starlogo"
+        src="assets/StarEmpty.svg"><img
+        class="Starlogo" src="assets/StarEmpty.svg"></div>
+    </div>
+    <div class="col">
+      <div><p class="textComp">Desing Patten composite</p></div>
+      <div style="margin-left: 30%"><img class="Starlogo" src="assets/StarFull.svg"><img
+        class="Starlogo" src="assets/StarFull.svg"><img class="Starlogo" src="assets/StarFull.svg"><img
+        class="Starlogo"
+        src="assets/StarEmpty.svg"><img
+        class="Starlogo" src="assets/StarEmpty.svg"></div>
+    </div>
+  </div>
+</div>
+
+<div class="box">
+
+  <div class="hobby">
+    <div class="gaucheh"><img class="saxophone" src="assets/Untitled%20(26).svg">
+      <p class="textPic">Saxophone</p></div>
+    <div class="droiteh"><img class="saxophone" src="assets/badm.svg">
+      <p class="textPic">Badminton</p></div>
+    <div class="gaucheh"><img class="saxophone" src="assets/paint.svg">
+      <p class="textPic">Dessin</p></div>
+    <div class="droiteh"><img class="saxophone" src="assets/coding.svg">
+      <p class="textPic">Code</p></div>
+  </div>
+
+
+</div>
+
+<div class="box">
+
+  <div class="hobby">
+    <form class="contact-form" (submit)="sendEmail($event)" class="text-center border border-light p-5 ">
+
+      <p style="font-size: 26px ; color: #f6f6f6 ; margin-left: 4%">Me contacter</p>
+
+
+      <div style="float: left;">
+
+
+        <input name="user_name" type="text " formControlName="contactFormName" id="defaultContactFormName"
+               class="form-control   lebelFormulaire" placeholder="Nom de la société / Nom">
+
+
+        <input name="user_email" type="email" formControlName="contactFormEmail" id="defaultContactFormEmail"
+               class="form-control lebelFormulaire" placeholder="E-mail">
+
+
+        <div class="form-group">
+    <textarea name="message" formControlName="contactFormMessage" class="form-control rounded-0 lebelFormulaire"
+              style="width: 680px;height: 200px ; max-width: 780px ; max-height: 260px ; min-height: 200px ; min-width: 680px "
+              id="exampleFormControlTextarea2"
+              rows="3" placeholder="Message"></textarea>
+        </div>
+      </div>
+      <div style="float: left; width: 680px; ">
+
+        <button mdbBtn color="info" outline="true" block="true" class="z-depth-0 my-4 waves-effect lebelFormulaire"
+                mdbWavesEffect value="Send" type="submit">Envoyer !
+        </button>
+
+      </div>
+    </form>
+  </div>
+
+
+</div>
+

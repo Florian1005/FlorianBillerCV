@@ -258,7 +258,7 @@ p {
 }
 
 .col{
-flex-basis: 0;
+  flex-basis: 0;
   flex-grow: 1;
   max-width: 100%;
 }
@@ -470,7 +470,7 @@ flex-basis: 0;
 .saxophone{
 
   height: 17vh;
-padding-top: 12px;
+  padding-top: 12px;
   padding-left: 12px;
 }
 
