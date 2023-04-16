@@ -57,8 +57,9 @@
 </div>
 
 
-<div style="height:2500px;background-color:rgba(57, 62, 70,1);font-size:36px">
-
+<div id="scrollDiv" style="height:2500px;background-color:rgba(57, 62, 70,1);font-size:36px">
+  <div  >
+  </div>
   <section>
     <div *ngIf="scrollValue>=1100 && scrollValue<=3100"
          style="position: fixed;top: 8%;z-index: 9999999 ; font-size: 26px ; color: #f6f6f6 ; margin-left: 4%">Parcours
@@ -491,7 +492,15 @@
 <div class="box">
 
   <div class="hobby">
-    <form class="contact-form" (submit)="sendEmail($event)" class="text-center border border-light p-5 ">
+
+
+    <p style="font-size: 26px ; color: #f6f6f6 ; margin-left: 4%">Me contacter</p>
+
+    <p style="font-size: 18px ; color: #f6f6f6 ; margin-left: 4%">florianbiller10@gmail.com</p><br>
+    <p style="font-size: 18px ; color: #f6f6f6 ; margin-left: 4%">https://fr.linkedin.com/in/florian-biller-9a7a65198</p>
+
+
+    <!--<form class="contact-form" (submit)="sendEmail($event)" class="text-center border border-light p-5 ">
 
       <p style="font-size: 26px ; color: #f6f6f6 ; margin-left: 4%">Me contacter</p>
 
@@ -521,7 +530,7 @@
         </button>
 
       </div>
-    </form>
+    </form>-->
   </div>
 
 

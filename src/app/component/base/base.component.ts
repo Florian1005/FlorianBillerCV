@@ -69,8 +69,8 @@ export class BaseComponent {
         titre: "Projet UHA4.0 [Logitud]",
         titreBis: "DBGeoAddresses",
         content: "Developper un referentiel d'adresses \n" +
-          "qui seramulti-source et dont on\n" +
-          "connait la validite des donnees",
+          "qui sera multi-source et dont on\n" +
+          "connait la validité des données",
         contentBis: "NDLZKzdddz",
         date: "11/2018 1/2018",
         logo: ['assets/mongo.png','assets/node.png', ]
@@ -120,8 +120,8 @@ export class BaseComponent {
         id : "6",
         titre: "Stage [Actimage]",
         titreBis: "Actinote",
-        content: "Creer une app moblie permettant d'editer des workflows insitu(sequence d'activites a realiser pour assister la collecte\n" +
-          " d'informations ou la realisation de taches).",
+        content: "Créer une app moblie permettant d'éditer des workflows (séquence d'activitées à réaliser pour assister la collecte\n" +
+          " d'informations ou la réalisation de tâches).",
         contentBis: "ezhr",
         date: "2/2020 8/2020",
         logo: [ 'assets/node.png', 'assets/React.png'  ]
@@ -131,7 +131,7 @@ export class BaseComponent {
         id : "7",
         titre: "Projet Perso",
         titreBis: "Evolution",
-        content: "Simulation d'evolution d'une espece dans un millieu perturbé par un predateur" ,
+        content: "Simulation d'évolution d'une espece dans un millieu perturbé par un predateur" ,
         contentBis: "ezhr",
         date: "11/2019 1/2020 ",
         logo: [ 'assets/angular.png' ]
@@ -141,7 +141,7 @@ export class BaseComponent {
         titre: "Projet UHA4.0 [ElanGPS]",
         titreBis: "ELAN GPS de l'orientation",
         content: "capable d’informer les etudiants et futurs\n" +
-          " etudiants des differents parcoure d'apprentissage que propose l'Univereite de Haute Alsace(UHA).",
+          " étudiants des differents parcoure d'apprentissage que propose l'Univereite de Haute Alsace(UHA).",
         contentBis: "ezhr",
         date: "11/2019 1/2020 ",
         logo: ['assets/angular.png','assets/nestjs.png','assets/Typescript.png','assets/Bootstrap.png','assets/mysql.png','assets/Docker.png', 'assets/Jenkins.png']
@@ -170,12 +170,13 @@ export class BaseComponent {
         titre: "Développeur informatique Université Haute Alsace",
         titreBis: "Développement informatique",
         content: "Continuer le GPS de l'orientation disponible ici https://www.goelan.uha.fr/#/\n" +
-          "Devloppement de site Wordpress \n" +
-          "Devloppement d'un serious Game",
+          "Développement de site Wordpress \n" +
+          "Développement de trois serious Game",
         contentBis: "ezhr",
         date: "6/2020 8/2022",
         logo: ['assets/angular.png','assets/nestjs.png','assets/Unity.png','assets/WordPress.png']
       }
+
     ]
 
     window.addEventListener('scroll', this.scrolling, true)
@@ -189,7 +190,9 @@ export class BaseComponent {
     const element : any = document.getElementById('cursor')
     const element2 : any = document.getElementById('cursorTrail')
     const element3 : any = document.getElementById('cursorTraill')
-    this.scrollValue = s.explicitOriginalTarget.scrollingElement.scrollTop
+    window.addEventListener("scroll", (event) => {
+      this.scrollValue = scrollY;
+    });
     element.style.top  = this.positionY+ this.scrollValue + 'px'
     element2.style.top  = this.positionY+ this.scrollValue + 'px'
     element3.style.top  = this.positionY+ this.scrollValue + 'px'
@@ -299,9 +302,9 @@ export class BaseComponent {
     e.preventDefault();
     emailjs.sendForm('service_r5w2bho', 'template_cyv4q0x', e.target as HTMLFormElement, 'bVQg_h-p2Wnp1edIO')
       .then((result: EmailJSResponseStatus) => {
-        //  this.openSnackBar("Votre message a bien été envoyé")
+       //   this.openSnackBar("Votre message a bien été envoyé")
       }, (error) => {
-        //  this.openSnackBar("Une erreur est survenue")
+         // this.openSnackBar("Une erreur est survenue")
       });
   }
 }
